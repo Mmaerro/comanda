@@ -98,6 +98,54 @@ header svg{
     color: #ad1e1e;
 }
 
+
+/*! WAHTSAP  */
+.wpp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+  }
+ 
+  .wpp i{
+    position: sticky;
+    font-size: 40px;
+    color: white
+}
+
+main{
+    height: 800px;
+    z-index: 100000;
+}
+.menu{
+    margin-top: 100px;
+}
+
+.menu h1{
+    width: 50%;
+    background: linear-gradient(to right,#fff ,rgb(0, 0, 0, 0), rgb(0, 0, 0, 0) ), url(img/asdsadasdasd.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 10px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+
+footer{
+    height: 500px;
+}
 @media screen and (max-width: 450px){
     header{
     background: url('img/asdsadasdasd.png');
@@ -128,14 +176,4 @@ header svg{
 height: 150px;
     } */
     
-}
-
-main{
-    margin-top: -10px;
-    height: 800px;
-    z-index: 100000;
-}
-
-footer{
-    height: 500px;
 }
