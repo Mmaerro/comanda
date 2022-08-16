@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 nav {
     padding-right: 50px;
@@ -17,7 +20,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: end;
-    text-decoration: none;
 }
 
 nav a{
@@ -29,6 +31,8 @@ nav a{
     padding: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 5px 2px 12px rgb(0, 0, 0);
+    text-decoration: none;
+
 }
 
 header{
@@ -125,7 +129,7 @@ main{
     z-index: 100000;
 }
 .menu{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .menu h1{
