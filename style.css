@@ -10,7 +10,7 @@ nav {
     padding-right: 50px;
     height: 40px;
     transition: 0.5s;
-    z-index: 1000;
+    z-index: 100000;
     background: linear-gradient(#000000, rgb(203, 67, 53, 0));
     position: sticky;
     top: 0;
@@ -34,26 +34,44 @@ nav a{
 header{
     margin-top: -40px;
     background: url('img/asdsadasdasd.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
   height:700px;
   position: relative;
 }
-.wave{
-    display: none;
+
+header svg{
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-bottom: 0;
-    margin-bottom: -10px;
 }
 
 .encabezado{
-    width: 80%;
+    width: 50%;
+    height:50%;
     color: aliceblue;
-    font-size: 100px;
+    text-align: center;
+    position: relative;
+   
+
+}
+.encabezado img{
+    padding-top: 50px;
+    margin-top: 100px ;
+    width: 50%;
+    padding: 30px 0;
+    background-color: #000000c7;
+    border-radius: 90%;
+}
+.encabezado p{
+    font-size: 15px;
+    position: absolute;
 }
 .encabezado p:first-child{
+    margin:85px 0 0 160px;
+}
+
+/* .encabezado p:first-child{
     margin-left: 50px;
 
 }
@@ -74,7 +92,7 @@ header{
     color: #ad1e1e;
     height: 250px;
 
-}
+} */
 .arc_1{
     font-family: 'Meddon', cursive;
     color: #ad1e1e;
@@ -82,16 +100,12 @@ header{
 
 @media screen and (max-width: 450px){
     header{
-    background: url('img/hola.png');
-    background-size: contain;
+    background: url('img/asdsadasdasd.png');
+    background-size: cover;
     background-repeat: no-repeat;
     height:500px;
     }
-    .wave{
-        display: block;
-        position: absolute;
-    
-    }
+   
     nav {
         padding-right: 0px;
         justify-content: space-evenly;
@@ -103,7 +117,7 @@ header{
         font-size: 50px;
         z-index: 1000;
     }
-    .encabezado p:last-child{
+    /* .encabezado p:last-child{
         font-size: 30px;
         margin: 30px 0 0 100px;
 
@@ -112,7 +126,7 @@ header{
     align-items: center;
     padding-top: 40px;
 height: 150px;
-    }
+    } */
     
 }
 
