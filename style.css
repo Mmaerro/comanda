@@ -21,7 +21,7 @@ nav {
 }
 
 nav a{
-    color: rgb(145, 14, 14);
+    color: rgb(255, 255, 255);
     transition: 0.5s;
     text-align: center;
     font-size: 15px;
@@ -48,27 +48,6 @@ header{
     margin-bottom: -10px;
 }
 
-@media screen and (max-width: 450px){
-    header{
-    background: url('img/hola.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height:500px;
-    }
-    .wave{
-        display: block;
-        position: absolute;
-    
-    }
-    nav {
-        padding-right: 0px;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    
-}
 .encabezado{
     width: 80%;
     color: aliceblue;
@@ -89,7 +68,7 @@ header{
     margin:-100px 0 0 450px;
     font-size: 50px;
     text-align: center;
-    background-color: #3f3f3fd7;
+    background-color: #3f3f3fe8;
     border-radius: 90%;
     width: fit-content;
     color: #ad1e1e;
@@ -101,9 +80,46 @@ header{
     color: #ad1e1e;
 }
 
+@media screen and (max-width: 450px){
+    header{
+    background: url('img/hola.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:500px;
+    }
+    .wave{
+        display: block;
+        position: absolute;
+    
+    }
+    nav {
+        padding-right: 0px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .encabezado{
+        padding-top: 70px;
+        width: 100%;
+        font-size: 50px;
+        z-index: 1000;
+    }
+    .encabezado p:last-child{
+        font-size: 30px;
+        margin: 30px 0 0 100px;
+
+        width: 190px;
+        grid: repeat(2, 25px) / repeat(1, auto);
+    align-items: center;
+    padding-top: 40px;
+height: 150px;
+    }
+    
+}
 
 main{
+    margin-top: -10px;
     height: 800px;
+    z-index: 100000;
 }
 
 footer{
