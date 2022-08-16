@@ -50,7 +50,7 @@ header{
 
 @media screen and (max-width: 450px){
     header{
-    background: url('/img/hola.png');
+    background: url('img/hola.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -66,23 +66,9 @@ header{
         justify-content: space-evenly;
         align-items: center;
     }
+
     
 }
-header figure{
-    position: absolute;
-    top: 10%;
-    left: 10%;    
-    z-index: 100;
-    display: flex;
-    align-items: center;
-}
-header figure figcaption{
-    width: 65%;
-    color: aliceblue;
-    font-size: 100px;
-    font-weight: lighter;
-}
-
 .encabezado{
     width: 80%;
     color: aliceblue;
