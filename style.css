@@ -110,10 +110,22 @@ main{
     width: 100%;
     height: 500px;
     padding-top: 50px;
+    position: relative;
 
 }
+.menu svg{
+    position: absolute;
+    z-index: 1000;
 
-.menu h1{
+}
+.menu .svg1{
+    transform: rotate(180deg);
+    top: 0;
+}
+.menu .svg{
+    bottom: 0;
+}
+.menuStyle{
     width: 50%;
     background: linear-gradient(to right,#fff ,rgb(0, 0, 0, 0), rgb(0, 0, 0, 0) ), url(img/asdsadasdasd.png);
     background-position: cover;
@@ -121,10 +133,19 @@ main{
     color: rgb(255, 255, 255);
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
-    padding: 10px;
+    height: 43px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.menuStyle h1{ 
     text-align: right;
-    padding-right: 30px;
     letter-spacing: 4px;
+    right: 30px;
+    z-index: 10000000;
+    color: #000000;
+    position: absolute;
 }
 
 
