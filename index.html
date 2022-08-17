@@ -8,6 +8,7 @@
     <title>La Comanda</title>
     <link rel="shortcut icon" href="img/log.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,16 +34,19 @@
     </header>
     
     <div class="wpp">
-        <a href="https://api.whatsapp.com/send?phone=+59891434205"><i class="fa-brands fa-whatsapp"></i></a>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+59891434205"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     <main id="menu">
         <section  class="menu">
-            <h1>MENU</h1>
+            <h1 data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">MENU</h1>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
 
         var nav = document.getElementById("nav");
@@ -62,8 +66,11 @@
 
 
 
+          AOS.init();
+
 
     </script>
+
         <script src="https://kit.fontawesome.com/382515b1c0.js" crossorigin="anonymous"></script>
 
 </body>
