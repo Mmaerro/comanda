@@ -340,6 +340,9 @@ footer {
         font-size: 50px;
         z-index: 1000;
     }
+    .encabezado img{
+        padding: 30px 0;
+    }
 
     .menu{
         width: 100%;
