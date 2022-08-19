@@ -352,8 +352,11 @@ footer {
         width: 50px;
         padding: 7px 0;
     }
+    .b h2{
+        padding-left: 50px;
+    }
 
-    .b {
+    .b{
         margin-top: 50px;
     }
     .cards{
