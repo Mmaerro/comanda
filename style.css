@@ -237,11 +237,12 @@ clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
     padding-top: 40px;;
 
 }
-.imgcard blockquote{
+.imgcard ul{
     background: #c4c4c4;
     font-size: large;
     text-align: left;
     padding: 5px;
+    list-style:square inside ;    
 }
 .imgcard a{
     padding: 5px 6px 0 ;
