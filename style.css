@@ -43,7 +43,7 @@ header {
     background: url('img/asdsadasdasd.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 730px;
+    height: 100vh;
     position: relative;
 }
 
@@ -51,6 +51,7 @@ header svg {
     position: absolute;
     bottom: 0;
     width: 100%;
+    
 }
 
 .encabezado {
@@ -99,12 +100,14 @@ header svg {
     justify-content: center;
     align-items: center;
     z-index: 100000;
+    
 }
 
 .wpp i {
     position: sticky;
     font-size: 40px;
-    color: white
+    color: white;
+
 }
 
 
@@ -120,16 +123,12 @@ main {
 }
 
 .menu {
-    margin-top: 100px;
-    background: url('img/hola.png') no-repeat;
-    background-size: contain;
     width: 100%;
     height: 500px;
     padding-top: 50px;
     position: relative;
 
 }
-
 
 .menuStyle {
     width: 30%;
@@ -151,8 +150,26 @@ main {
     letter-spacing: 4px;
     right: 30px;
     z-index: 10000000;
-    color: #ffffff;
     position: absolute;
+}
+
+/*! cards menu BBURGUERS  */
+
+.select h2{
+    
+    letter-spacing: 2px;
+    margin: 0 auto;
+    width:100%;
+    background: linear-gradient(to right, #e4e4e4, rgb(0, 0, 0, 0), #e4e4e4), url(img/asdsadasdasd.png);
+    background-position: cover;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 43px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
