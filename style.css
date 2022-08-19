@@ -115,7 +115,7 @@ header svg {
 
 body {
     background: #c4c4c4;
-    
+
 
 }
 
@@ -153,7 +153,8 @@ main {
 } */
 
 .menu {
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     height: 500px;
     padding-top: 50px;
     position: relative;
@@ -182,8 +183,16 @@ main {
     background-color: rgb(230, 2, 2);
     width: 100%;
     height: 5px;
-    margin: 0 10px;
-    border-radius: 10px;
+}
+
+.contlogo span:first-child {
+    margin-right: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.contlogo span:last-child {
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 .b {
@@ -212,10 +221,11 @@ main {
 
 /*! CARDS menu BBURGUERS  */
 
-.cards{
+.cards {
     padding: 5px;
     margin-left: 100px;
-    width: 200px;
+    min-width: 200px;
+    max-width: 250px;
     height: auto;
     background: url('img/asdsadasdasd.png');
     background-size: cover;
@@ -223,34 +233,50 @@ main {
     box-shadow: 0 0 8px #000000;
     color: rgb(255, 255, 255);
 }
-.imgcard img{
-width: 100%;
-height: fit-content;
-clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+
+.imgcard img {
+    width: 100%;
+    height: fit-content;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+    border: ridge 1px red;
+
 
 }
-.imgcard figcaption{
-    background: #c4c4c4;
+
+.imgcard figcaption {
+    background: #f2f2f2;
     font-size: 25px;
     letter-spacing: 4px;
-    margin-top: -40px;
-    padding-top: 40px;;
+    margin-top: -45px;
+    padding-top: 40px;
+    font-weight: 900;
+    color: #000;
+    border: ridge 1px red;
+    border-bottom: none;
 
 }
-.imgcard ul{
-    background: #c4c4c4;
+
+.imgcard ul {
+    background: #f2f2f2;
     font-size: large;
     text-align: left;
-    padding: 5px;
-    list-style:square inside ;    
-}
-.imgcard a{
-    padding: 5px 6px 0 ;
-    background: #c4c4c4;
-    text-decoration: none;
     color: #000;
-    margin-bottom: 15px;
+    padding: 5px;
+    list-style: square inside;
+    border: ridge 1px red;
+    border-top: none;
+}
 
+.cards a {
+    font-size: 12px;
+    top: 15px;
+    position: relative;
+    padding: 10px;
+    background: #cf4217;
+    text-decoration: none;
+    border: 1px solid #000;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -315,11 +341,10 @@ footer {
         z-index: 1000;
     }
 
-    .menuStyle {
-        width: 50%;
+    .menu{
+        width: 100%;
     }
-
-
+    
     .contlogo .logo {
         width: 50px;
         padding: 7px 0;
@@ -327,6 +352,9 @@ footer {
 
     .b {
         margin-top: 50px;
+    }
+    .cards{
+        margin: 0 auto;
     }
 
     /* .encabezado p:last-child{
