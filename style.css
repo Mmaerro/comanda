@@ -196,7 +196,6 @@ main {
 }
 
 .b {
-    position: absolute;
     width: fit-content;
     margin-bottom: 100px;
 }
@@ -363,10 +362,14 @@ footer {
     .b{
         margin-top: 50px;
     }
+    .select{
+        display: grid;
+    }
     .cards{
         margin: 0 auto;
+        margin-top: 50px;
     }
-
+    
     /* .encabezado p:last-child{
         font-size: 30px;
         margin: 30px 0 0 100px;
