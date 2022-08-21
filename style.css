@@ -122,7 +122,7 @@ body {
 main {
     width: 100%;
     margin: 0 auto;
-    height: 800px;
+    height: 1500px;
     z-index: 100000;
 
 }
@@ -155,7 +155,7 @@ main {
 .menu {
     margin: 0 auto;
     width: 90%;
-    height: 500px;
+    height: auto;
     padding-top: 50px;
     position: relative;
 
@@ -197,7 +197,7 @@ main {
 
 .b {
     width: fit-content;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .b h2 {
@@ -220,15 +220,17 @@ main {
 }
 
 /*! CARDS menu BBURGUERS  */
-.select{
+.select {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
 .cards {
-    margin-top: 150px;
     padding: 5px;
     margin-left: 100px;
-    min-width: 200px;
-    max-width: 250px;
+    width: 220px;
     height: auto;
     background: url('img/asdsadasdasd.png');
     background-size: cover;
@@ -239,10 +241,10 @@ main {
 
 .imgcard img {
     width: 100%;
-    height: 200PX;
+    height: 200px;
     clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
     border: ridge 1px red;
-
+    object-fit: cover;
 
 }
 
@@ -343,33 +345,53 @@ footer {
         font-size: 50px;
         z-index: 1000;
     }
-    .encabezado img{
+
+    .encabezado img {
         padding: 30px 0;
     }
 
-    .menu{
+    .menu {
         width: 100%;
     }
-    
+
     .contlogo .logo {
         width: 50px;
         padding: 7px 0;
     }
-    .b h2{
+
+    .b h2 {
         padding-left: 50px;
     }
 
-    .b{
+    .b {
         margin-top: 50px;
     }
-    .select{
+
+    .select {
         display: grid;
+        grid: repeat(2, auto) / repeat(2, 180px);
+        justify-content: space-evenly;
+        row-gap: 35px;
+        
     }
-    .cards{
+
+    .cards {
         margin: 0 auto;
-        margin-top: 50px;
+        margin-left: 0;
+        width: auto;
     }
-    
+   
+.imgcard img {
+    height: 130px;
+}
+.imgcard figcaption {
+    font-size: 16px;
+}
+    .cards a {
+        font-size: 10px;
+        padding: 8px;
+    }
+
     /* .encabezado p:last-child{
         font-size: 30px;
         margin: 30px 0 0 100px;
