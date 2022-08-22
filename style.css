@@ -415,7 +415,7 @@ footer {
         padding: 5px;
     }
 
-    .sape {
+    .guarnicion {
         position: relative;
         height: 300px;
         background-color: #000;
@@ -429,8 +429,26 @@ footer {
         justify-content: center;
         align-items: center;
     }
-    .sape ul{
-       
+    .guarnicion dl{
+       width:50%;
+       align-items: center;
+       margin: 0 auto;
+       margin-top: 50px;
+    }
+    .guarnicion .fritas dt{
+        margin-top: 20px;
+        height: 30px;
+    }
+    .guarnicion .rusticas{
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .guarnicion .boniatos{
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
 
     /* .encabezado p:last-child{
