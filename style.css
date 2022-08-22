@@ -376,7 +376,7 @@ footer {
         margin-left: 0;
         width: auto;
         height: 300px;
-        max-width: 150px;
+        width: 150px;
     }
    
 .imgcard img {
