@@ -353,6 +353,9 @@ footer {
         width: 100%;
         display: block;
     }
+    ::-webkit-scrollbar{
+        display: none;
+    }
     .gridContent{
        padding-bottom: 20px;
         width: 100%;
