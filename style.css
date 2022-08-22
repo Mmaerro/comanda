@@ -163,10 +163,10 @@ main {
     margin-left: 10px;
     border-radius: 10px 0 0 10px;
 }
+
 /*! menu BBURGUERS  */
 .b {
     width: fit-content;
-    grid-area: 1 / 1 / span 1/ span 3;
     margin-bottom: 30px;
 }
 
@@ -196,14 +196,18 @@ main {
     height: auto;
     padding-top: 50px;
     position: relative;
+    
+
+}
+.gridContent{
     display: grid;
     grid-template-columns: auto auto auto;
-   
 }
 
-.select:last-child{
-    grid-area: 2 / 3 / auto / auto;
+.select:last-child {
+    grid-area: 1 / 3 / auto / auto;
 }
+
 .select {
     display: flex;
     justify-content: space-around;
@@ -249,7 +253,7 @@ main {
     text-align: left;
     color: #fff;
     padding: 5px;
-    list-style: none ;
+    list-style: none;
     border: ridge 1px red;
     border-top: none;
     padding-left: 10px;
@@ -267,13 +271,18 @@ main {
     letter-spacing: 2px;
     color: rgb(255, 255, 255);
 }
-.sape{
+
+.sape {
     height: 250px;
     background-color: #000;
     position: absolute;
-    top: 220px;
-    width:100%;
+    top: 140px;
+    width: 100%;
     z-index: -1;
+    
+}
+.sape ul{
+    list-style: none;
 }
 
 
@@ -342,10 +351,16 @@ footer {
 
     .menu {
         width: 100%;
-        height:600px;
-        display: flex;
+        display: block;
+    }
+    .gridContent{
+       padding-bottom: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-areas: auto auto auto;
         flex-direction: row;
         overflow-x: scroll;
+        overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
     }
 
@@ -365,42 +380,54 @@ footer {
     .select {
         display: grid;
         grid: repeat(2, auto) / repeat(2, 150px);
-        justify-content: space-evenly;
-        row-gap: 35px;
-      
+        justify-content: space-between;
+        column-gap: 5px;
+        margin: 2.5px;
     }
 
     .cards {
         margin: 0 auto;
-        margin-left: 0;
         width: auto;
         height: 300px;
         width: 150px;
     }
-   
-.imgcard img {
-    height: 130px;
-    min-height: 140px;
-}
-.imgcard figcaption {
-    font-size: 12px;
-}
-.imgcard ul {
-    font-size: 13px;
-    min-height: 123px;
-}
+
+    .imgcard img {
+        height: 130px;
+        min-height: 140px;
+    }
+
+    .imgcard figcaption {
+        font-size: 12px;
+    }
+
+    .imgcard ul {
+        font-size: 13px;
+        min-height: 123px;
+    }
+
     .cards a {
         top: 10px;
-        font-size:8px;
+        font-size: 8px;
         padding: 5px;
     }
-    .sape{
-        height: 200px;
-        background-color: #000;
+
+    .sape {
         position: relative;
-        margin-top: 200px;
-        width:200;
-        z-index: 100;
+        height: 300px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        top: -80px;
+        width: 100%;
+        z-index: -100; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sape ul{
+       
     }
 
     /* .encabezado p:last-child{
