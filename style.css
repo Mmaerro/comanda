@@ -392,8 +392,16 @@ footer {
 }
     .cards a {
         top: 10px;
-        font-size:7px;
+        font-size:8px;
         padding: 5px;
+    }
+    .sape{
+        height: 200px;
+        background-color: #000;
+        position: absolute;
+        top: 450px;
+        width:100%;
+        z-index: -1;
     }
 
     /* .encabezado p:last-child{
