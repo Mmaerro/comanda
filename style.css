@@ -503,7 +503,7 @@ footer {
     .guarnicion .rusticas{
         text-align: center;
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -528,4 +528,11 @@ footer {
         margin: 0 auto;
     }
 
+}
+@media screen and (max-width: 310px) {
+
+
+    .guarnicion .rusticas{
+        width: 100%;
+    }
 }
