@@ -467,7 +467,7 @@ footer {
 
     .guarnicion {
         position: relative;
-        height: 300px;
+        height: 310px;
         background-color: #000;
         color: #fff;
         text-align: center;
@@ -508,19 +508,24 @@ footer {
         padding-bottom: 10px;
     }
     .guarnicion .boniatos{
-        padding-top: 15px;
+        padding-top: 10px;
         padding-bottom: 13px;
     }
 
-    /* .encabezado p:last-child{
-        font-size: 30px;
-        margin: 30px 0 0 100px;
-
-        width: 190px;
-        grid: repeat(2, 25px) / repeat(1, auto);
-    align-items: center;
-    padding-top: 40px;
-height: 150px;
-    } */
+    .guarnicion p{
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        padding-top: 15px;
+        font-size: 10px;
+    }
+    .guarnicion p b{
+        left: 48%;
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+    }
 
 }
