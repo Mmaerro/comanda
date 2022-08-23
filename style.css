@@ -167,7 +167,6 @@ main {
 /*! menu BBURGUERS  */
 .b {
     width: fit-content;
-    margin-bottom: 30px;
 }
 
 .b h2 {
@@ -236,20 +235,21 @@ main {
 }
 
 .imgcard figcaption {
-    background: #c4c4c4;
+    text-align: center;
+    background: #000000cc;
     font-size: 20px;
     letter-spacing: 4px;
     margin-top: -45px;
-    padding-top: 40px;
+    padding-top: 43px;
     font-weight: 900;
-    color: #000;
+    color: #fff;
     border: ridge 1px red;
     border-bottom: none;
 
 }
 
 .imgcard ul {
-    background: #c4c4c4;
+    background: #000000cc;
     font-size: large;
     text-align: left;
     color: #fff;
@@ -273,18 +273,18 @@ main {
     color: rgb(255, 255, 255);
 }
 
-.sape {
+.guarnicion {
     height: 250px;
     background-color: #000;
     position: absolute;
     top: 140px;
     width: 100%;
     z-index: -1;
+    border-top: 1px solid #ff0000;
+    border-bottom: 1px solid #ff0000;
     
 }
-.sape ul{
-    list-style: none;
-}
+
 
 
 
@@ -331,7 +331,6 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         height: 500px;
-        background-attachment: fixed;
     }
 
     nav {
@@ -436,6 +435,10 @@ footer {
        align-items: center;
        margin: 0 auto;
        margin-top: 50px;
+       letter-spacing: 2px;
+    }
+    .guarnicion dd{
+        font-size: 12px;
     }
     .guarnicion .fritas dt{
         margin-top: 20px;
@@ -444,13 +447,13 @@ footer {
     .guarnicion .rusticas{
         text-align: center;
         margin: 0 auto;
-        width: 50%;
+        width: 80%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
     .guarnicion .boniatos{
         padding-top: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 13px;
     }
 
     /* .encabezado p:last-child{
