@@ -6,39 +6,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Comanda</title>
-    <link rel="shortcut icon" href="assets/img/log.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="img/log.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <a href="" class="link">Nosotros</a>
-        <a href="" class="link">Menu</a>
+        <a href="#menu" class="link">Menu</a>
         <a href="" class="link">Locales</a>
-        <a href="" class="link">Carrito</a>
+        <a href="" class="link">Pedidos</a>
     </nav>
     <header>
-          <div class="encabezado">
-               <p>
-                Pedi con ganas 
-               </p>
-               <p>Pedi en</p>
-               <p>LA <a class="arc_1">Comanda</a></p>
-            </div>
-            <div class="wave">
-                <img src="assets/img/burger2.png" alt="">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,101.3C840,96,960,160,1080,181.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-            </div>
+        <div class="encabezado">
+            <img src="img/Sin título-2S.gif" alt="">
+        </div>
+        <!-- <div class="wave">
+                <img src="img/burger2.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="black" fill-opacity="1" d="M0,288L60,282.7C120,277,240,267,360,224C480,181,600,107,720,101.3C840,96,960,160,1080,181.3C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            </div> -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#f2f2f2" fill-opacity="1"
+                d="M0,192L12,186.7C24,181,48,171,72,186.7C96,203,120,245,144,261.3C168,277,192,267,216,240C240,213,264,171,288,165.3C312,160,336,192,360,176C384,160,408,96,432,85.3C456,75,480,117,504,160C528,203,552,245,576,224C600,203,624,117,648,69.3C672,21,696,11,720,37.3C744,64,768,128,792,170.7C816,213,840,235,864,202.7C888,171,912,85,936,48C960,11,984,21,1008,42.7C1032,64,1056,96,1080,112C1104,128,1128,128,1152,133.3C1176,139,1200,149,1224,160C1248,171,1272,181,1296,208C1320,235,1344,277,1368,261.3C1392,245,1416,171,1428,133.3L1440,96L1440,320L1428,320C1416,320,1392,320,1368,320C1344,320,1320,320,1296,320C1272,320,1248,320,1224,320C1200,320,1176,320,1152,320C1128,320,1104,320,1080,320C1056,320,1032,320,1008,320C984,320,960,320,936,320C912,320,888,320,864,320C840,320,816,320,792,320C768,320,744,320,720,320C696,320,672,320,648,320C624,320,600,320,576,320C552,320,528,320,504,320C480,320,456,320,432,320C408,320,384,320,360,320C336,320,312,320,288,320C264,320,240,320,216,320C192,320,168,320,144,320C120,320,96,320,72,320C48,320,24,320,12,320L0,320Z">
+            </path>
+        </svg>
     </header>
+
+    <div class="wpp">
+        <a target="_blank" href="https://wa.me/094965029?text=!Hola,+me+gustaria+hacer+un+pedido..."><i
+                class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <main id="menu">
+        <div class="contlogo">
+            <span></span>
+            <img class="logo" src="img/Sin título-2S.gif" alt="">
+            <span></span>
+        </div>
+        <div class="b">
+            <h2>Burgers</h2>
+            <span></span>
+        </div>
+        <section class="menu">
+
+            <div class="gridContent">
+                <div class="select burguers">
+                    <div class="cards">
+                        <figure class="imgcard">
+                            <img src="img/CLASICA.png" alt="Hamburguesa Clasica">
+                            <figcaption>CLASICA</figcaption>
+                            <ul>
+                                <li>200grs de Carne</li>
+                                <li>Jamon</li>
+                                <li>Muzzarela</li>
+                                <li>Panceta</li>
+                                <li>Tomate</li>
+                                <li>2 Salsas a eleccion</li>
+                            </ul>
+                            <a href="">AGREGAR A MI PEDIDO</a>
+                        </figure>
+                    </div>
+                    <div class="cards">
+                        <figure class="imgcard">
+                            <img src="img/comanda.png" alt="Hamburguesa Clasica">
+                            <figcaption>COMANDA</figcaption>
+                            <ul>
+                                <li>200grs de Carne</li>
+                                <li>Provolone</li>
+                                <li>Cebolla caramelizada</li>
+                                <li>Panceta</li>
+                                <li>Rucula</li>
+                                <li>Tomate</li>
+                                <li>2 Salsas a eleccion</li>
+                            </ul>
+                            <a href="">AGREGAR A MI PEDIDO</a>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="select burguers">
+                    <div class="cards">
+                        <figure class="imgcard">
+                            <img src="img/ches.png" alt="Hamburguesa Clasica">
+                            <figcaption>CHEESBURGER</figcaption>
+                            <ul>
+                                <li>200grs de Carne</li>
+                                <li>Chedar</li>
+                                <li>Panceta</li>
+                                <li>Tomate</li>
+                                <li>2 Salsas a eleccion</li>
+                            </ul>
+                            <a href="">AGREGAR A MI PEDIDO</a>
+                        </figure>
+                    </div>
+                    <div class="cards">
+                        <figure class="imgcard">
+                            <img src="img/pollo.png" alt="Hamburguesa Clasica">
+                            <figcaption>Pollo Crispy</figcaption>
+                            <ul>
+                                <li>Medallon de Pollo Crispy</li>
+                                <li>Chedar</li>
+                                <li>Rucula</li>
+                                <li>Tomate</li>
+                                <li>2 Salsas a eleccion</li>
+                            </ul>
+                            <a href="">AGREGAR A MI PEDIDO</a>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+            <div class="guarnicion">
+                <dl class="fritas">
+                    <dt class="sin">Sin fritas</dt>
+                        <dd>SIMPLE.... $290</dd>
+                        <dd>DOBLE..... $350</dd>
+                        <dd>TRIPLE.... $410</dd>
+                    <dt class="con">Con fritas</dt>
+                        <dd>SIMPLE.... $260</dd>
+                        <dd>DOBLE..... $420</dd>
+                        <dd>TRIPLE.... $480</dd>
+                </dl>
+                <dl class="bonirustic">
+                    <dt class="rusticas">Con Rusticas o aros de cebolla</dt>
+                        <dd>SIMPLE.... $400</dd>
+                        <dd>DOBLE..... $460</dd>
+                        <dd>TRIPLE.... $500</dd>
+                    <dt class="boniatos">Con boniatos</dt>
+                        <dd>SIMPLE.... $480</dd>
+                        <dd>DOBLE..... $540</dd>
+                        <dd>TRIPLE.... $600</dd>
+                </dl>
+            </div>
+        </section>
+        <div class="select pizzas">
+
+        </div>
+        <div class="select mila">
+
+        </div>
+    </main>
     <footer>
 
     </footer>
- <script src="jquery.js"></script>
- <script src="https://gimmicklog.com/demo/arctext/jquery.arctext.js"></script>
- <script>
-    $(".arc_1").arctext({radius: 450})
+    <script>
+        var nav = document.getElementById("nav");
+        // cuando el usuario baja 20px del top del documento se aplica el cambio
+        window.onscroll = function () {
+            scrollFunction()
+        };
 
- </script>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                nav.style.height = "50px";
+                nav.style.background = "rgb(0, 0, 0, 0.9)";
+            } else {
+                nav.style.height = "40px";
+                nav.style.background = "linear-gradient(#000000, rgb(0, 0, 0, 0))";
+            }
+        }
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/382515b1c0.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

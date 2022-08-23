@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*  M E N U  */
+
+nav {
+    padding-right: 50px;
+    height: 40px;
+    transition: 0.5s;
+    z-index: 100000;
+    background: linear-gradient(#000000, rgb(203, 67, 53, 0));
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 5px 2px 12px rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+header {
+    margin-top: -40px;
+    background: url('img/asdsadasdasd.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+header svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.encabezado {
+    width: 50%;
+    height: 50%;
+    color: aliceblue;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+
+
+}
+
+.encabezado img {
+    margin-top: 100px;
+    width: 50%;
+    padding: 50px 0;
+    background-color: #000000c7;
+    border-radius: 90%;
+    box-shadow: 0 0 10px rgba(206, 206, 206, 0.705);
+}
+
+.encabezado p {
+    font-size: 15px;
+    position: absolute;
+}
+
+.encabezado p:first-child {
+    margin: 85px 0 0 160px;
+}
+
+
+
+
+/*! WAHTSAP  */
+.wpp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    right: 20px;
+    bottom: 30px;
+    border-radius: 50%;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+
+}
+
+.wpp i {
+    position: sticky;
+    font-size: 40px;
+    color: white;
+
+}
+
+
+body {
+    background: #f2f2f2;
+
+
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    height: 1500px;
+    z-index: 100000;
+
+}
+
+
+
+
+
+.contlogo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contlogo .logo {
+    margin: 0 auto;
+    width: 120px;
+    display: flex;
+    background-color: #000000c7;
+    border-radius: 80%;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgb(75, 75, 75);
+}
+
+.contlogo span {
+    background-color: rgb(230, 2, 2);
+    width: 100%;
+    height: 5px;
+}
+
+.contlogo span:first-child {
+    margin-right: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.contlogo span:last-child {
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+/*! menu BBURGUERS  */
+.b {
+    width: fit-content;
+    margin-bottom: -40px;
+}
+
+.b h2 {
+    font-family: 'Arvo', serif;
+    padding-left: 30vmin;
+    letter-spacing: 2px;
+    width: 100%;
+    font-size: 40px;
+    color: #000;
+    z-index: 1000;
+}
+
+.b span {
+    margin-top: -8px;
+    display: block;
+    background: rgb(230, 2, 2);
+    width: 100%;
+    height: 6px;
+    border-radius: 0 10px 10px 0;
+}
+
+/*! CARDS menu BBURGUERS  */
+.menu {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    padding-top: 50px;
+    position: relative;
+    
+
+}
+.gridContent{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.select:last-child {
+    grid-area: 1 / 3 / auto / auto;
+}
+
+.select {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.cards {
+    padding: 5px;
+    width: 220px;
+    height: auto;
+    background: url('img/asdsadasdasd.png');
+    background-size: cover;
+    text-align: center;
+    box-shadow: 0 0 8px #000000;
+}
+
+.imgcard img {
+    width: 100%;
+    height: 200px;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+    border: ridge 1px red;
+    object-fit: cover;
+
+}
+
+.imgcard figcaption {
+    text-align: center;
+    background: #000000cc;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: -45px;
+    padding-top: 43px;
+    font-weight: 900;
+    color: #fff;
+    border: ridge 1px red;
+    border-bottom: none;
+
+}
+
+.imgcard ul {
+    background: #000000cc;
+    font-size: large;
+    text-align: left;
+    color: #fff;
+    padding: 5px;
+    list-style: none;
+    border: ridge 1px red;
+    border-top: none;
+    padding-left: 10px;
+    min-height: 158px;
+}
+
+.cards a {
+    font-size: 12px;
+    top: 15px;
+    position: relative;
+    padding: 10px;
+    background: #cf4217;
+    text-decoration: none;
+    border: 1px solid #000;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+.guarnicion {
+    height: 250px;
+    background-color: #000;
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    z-index: -1;
+    border-top: 1px solid #ff0000;
+    border-bottom: 1px solid #ff0000;
+    
+}
+
+
+
+
+footer {
+    height: 300px;
+    background-color: #000000;
+
+}
+
+
+
+
+.colors {
+    background: linear-gradient(to right, #cb3066, #16bffd, #cb3066, #16bffd, #cb3066, #16bffd, #cb3066);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        background: url('img/asdsadasdasd.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    nav {
+        padding-right: 0px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .encabezado {
+        padding-top: 70px;
+        width: 100%;
+        font-size: 50px;
+        z-index: 1000;
+    }
+
+    .encabezado img {
+        padding: 30px 0;
+    }
+
+    .menu {
+        width: 100%;
+        display: block;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .gridContent{
+       padding-bottom: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-areas: auto auto auto;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .contlogo .logo {
+        width: 50px;
+        padding: 7px 0;
+    }
+
+    .b h2 {
+        padding-left: 50px;
+    }
+
+    .b {
+        margin-top: 50px;
+    }
+
+    .select {
+        display: grid;
+        grid: repeat(2, auto) / repeat(2, 150px);
+        justify-content: space-between;
+        column-gap: 5px;
+        margin: 2.5px;
+    }
+
+    .cards {
+        margin: 0 auto;
+        width: auto;
+        height: 300px;
+        width: 150px;
+    }
+
+    .imgcard img {
+        height: 130px;
+        min-height: 140px;
+    }
+
+    .imgcard figcaption {
+        font-size: 12px;
+    }
+
+    .imgcard ul {
+        font-size: 13px;
+        min-height: 123px;
+    }
+
+    .cards a {
+        top: 10px;
+        font-size: 8px;
+        padding: 5px;
+    }
+
+    .guarnicion {
+        position: relative;
+        height: 300px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        top: -80px;
+        width: 100%;
+        z-index: -100; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .guarnicion dl{
+       width:50%;
+       align-items: center;
+       margin: 0 auto;
+       margin-top: 50px;
+       letter-spacing: 2px;
+    }
+    .guarnicion dd{
+        font-size: 12px;
+    }
+    .guarnicion .fritas dt{
+        margin-top: 20px;
+        height: 30px;
+    }
+    .guarnicion .rusticas{
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .guarnicion .boniatos{
+        padding-top: 15px;
+        padding-bottom: 13px;
+    }
+
+    /* .encabezado p:last-child{
+        font-size: 30px;
+        margin: 30px 0 0 100px;
+
+        width: 190px;
+        grid: repeat(2, 25px) / repeat(1, auto);
+    align-items: center;
+    padding-top: 40px;
+height: 150px;
+    } */
+
+}
