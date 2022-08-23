@@ -293,7 +293,7 @@ main {
 }
 
 .guarnicion {
-    height: 300px;
+    height: 310px;
     background-color: #3d3d3d;
     position: absolute;
     top: 140px;
@@ -315,7 +315,7 @@ main {
 }
 
 .guarnicion dt {
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 10px;
     padding: 10px;
 }
@@ -329,7 +329,7 @@ main {
     width: 350px;
     margin: 0 auto;
     position: absolute;
-    bottom: 0;
+    bottom: 12px;
     padding-top: 15px;
     font-size: 10px;
 }
@@ -494,11 +494,11 @@ footer {
 
     .guarnicion {
         position: relative;
-        height: 310px;
+        height: 285px;
         color: #fff;
         text-align: center;
         margin: 0;
-        top: -90px;
+        top: -80px;
         width: 100%;
         z-index: -100;
         display: flex;
@@ -508,7 +508,7 @@ footer {
     }
 
     .guarnicion dl {
-        width: 50%;
+        width: 40%;
         align-items: center;
         margin: 0 auto;
         margin-top: 10px;
@@ -521,13 +521,13 @@ footer {
     }
 
     .guarnicion dd {
-        font-size: 12px;
+        font-size: 10px;
         padding: 2px;
         letter-spacing: 1px;
     }
 
     .guarnicion .fritas {
-        margin-left: 0;
+      margin: 0 auto;
     }
 
     .guarnicion .fritas dt {
@@ -550,9 +550,10 @@ footer {
 
 
     .armala {
+        position: relative;
         border-top: 5px solid #3d3d3d;
         margin: 0 auto;
-        margin-top: -90px;
+        margin-top: -80px;
         padding: 5px;
         height: 300px;
         background: red;
@@ -560,6 +561,7 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: 100px 100px;
+        align-items: center;
         gap: 5px;
     }
 
@@ -621,7 +623,7 @@ footer {
     }
 
 
-    .armala p {
+    .armala p:first-of-type {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -633,12 +635,25 @@ footer {
         left: 10px;
         padding: 10px;
     }
-    .armala p b{
+    .armala p:first-of-type b{
         font-family: 'Arvo', serif;
         font-weight: 800;
         letter-spacing: 1px;
         padding-right: 10px;
         font-size: 20px;
+    }
+    .armala p:last-of-type{
+        font-family: 'Arvo', serif;
+        position: absolute;
+        font-size: 11px;
+        padding: 5px;
+        top: -10px;
+        left: 0;
+     border-bottom-right-radius: 30px;
+     border-top-right-radius: 30px;
+        background-color: #f2f2f2;
+        color: #000;
+        font-weight: 1000;
     }
 
 }
