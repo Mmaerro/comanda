@@ -483,11 +483,18 @@ footer {
        width:50%;
        align-items: center;
        margin: 0 auto;
-       margin-top: 50px;
+       margin-top: 10px;
        letter-spacing: 2px;
+    }
+    .guarnicion dt{
+        padding-top: 0;
+        padding: 0;
     }
     .guarnicion dd{
         font-size: 12px;
+    }
+    .guarnicion .fritas {
+        margin-left: 0;
     }
     .guarnicion .fritas dt{
         margin-top: 20px;
