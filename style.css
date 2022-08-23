@@ -167,6 +167,7 @@ main {
 /*! menu BBURGUERS  */
 .b {
     width: fit-content;
+    margin-bottom: -40px;
 }
 
 .b h2 {
