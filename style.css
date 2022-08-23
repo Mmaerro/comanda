@@ -466,11 +466,12 @@ footer {
         min-height: 139px;
         max-height: 139px;
         list-style-position: inside;
-        padding-left: 15px;
+        padding-left: 12px;
     }
 
     .imgcard ul li {
         position: relative;
+        letter-spacing: 1px;
     }
 
     .imgcard ul li::before {
@@ -521,6 +522,8 @@ footer {
 
     .guarnicion dd {
         font-size: 12px;
+        padding: 2px;
+        letter-spacing: 1px;
     }
 
     .guarnicion .fritas {
@@ -560,6 +563,32 @@ footer {
         gap: 5px;
     }
 
+    .armala dl {
+        margin: 0 auto;
+        background: #3d3d3d;
+        width: 128px;
+        height: 100%;
+    }
+
+    .armala dl dt {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .armala dl:nth-child(4) dt {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 90%;
+    }
+    .armala dl dd {
+        text-align: center;
+        width: auto;
+        font-size: 11px;
+        padding: 2px;
+        letter-spacing: 1px;
+
+    }
     .armala dl:nth-child(1) {
         background: transparent;
         width: fit-content;
@@ -572,25 +601,16 @@ footer {
         font-weight: 800;
         letter-spacing: 1px;
     }
-
-    .armala dl {
-        margin: 0 auto;
-        background: #3d3d3d;
-        width: 130px;
-        height: 100%;
+    .armala dl:nth-child(1) dd:first-of-type{
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 11px;
+    }
+    .armala dl:nth-child(1) dd:last-of-type{
+        font-size: 12px;
     }
 
-    .armala dl dt {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .armala dl dd {
-        text-align: center;
-        width: auto;
-        font-size: 13px;
-
-    }
 
     .armala dl:nth-child(4) {
         grid-area: 2 / 2 / auto / auto;
