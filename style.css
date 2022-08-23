@@ -423,6 +423,7 @@ footer {
         top: 10px;
         font-size: 8px;
         padding: 5px;
+        word-break: keep-all;
     }
 
     .guarnicion {
