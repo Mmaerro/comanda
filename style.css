@@ -402,6 +402,7 @@ footer {
     .imgcard img {
         height: 130px;
         min-height: 140px;
+        max-height: 140px;
     }
 
     .imgcard figcaption {
@@ -438,7 +439,7 @@ footer {
        align-items: center;
        margin: 0 auto;
        margin-top: 50px;
-       letter-spacing: 2px;
+       letter-spacing: 10px;
     }
     .guarnicion dd{
         font-size: 12px;
