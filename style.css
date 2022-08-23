@@ -201,10 +201,11 @@ main {
     height: auto;
     padding-top: 50px;
     position: relative;
-    
+
 
 }
-.gridContent{
+
+.gridContent {
     width: 100%;
     margin: 0 auto;
     padding-top: 15px;
@@ -219,7 +220,7 @@ main {
 .select {
     display: flex;
     justify-content: space-evenly;
-    
+
 
 }
 
@@ -245,7 +246,7 @@ main {
 
 .imgcard figcaption {
     text-align: center;
-    background: #000000cc;
+    background: #3d3d3de0;
     font-size: 20px;
     letter-spacing: 4px;
     margin-top: -45px;
@@ -258,11 +259,11 @@ main {
 }
 
 .imgcard ul {
-    background: #000000cc;
+    background: #3d3d3de0;
     font-size: large;
     text-align: left;
     color: #fff;
-    padding:5px;
+    padding: 5px;
     list-style: none;
     border: ridge 1px red;
     border-top: none;
@@ -270,7 +271,8 @@ main {
     min-height: 158px;
     position: relative;
 }
-.imgcard ul li::before{
+
+.imgcard ul li::before {
     content: "-";
     color: rgb(131, 131, 131);
     position: absolute;
@@ -291,8 +293,8 @@ main {
 }
 
 .guarnicion {
-    height: 250px;
-    background-color: #000;
+    height: 300px;
+    background-color: #3d3d3d;
     position: absolute;
     top: 140px;
     width: 100%;
@@ -307,17 +309,36 @@ main {
 
 }
 
-.guarnicion .rusticas{
+.guarnicion .rusticas {
     width: 60%;
     margin: 0 auto;
 }
-.guarnicion dt{
+
+.guarnicion dt {
     font-size: 18px;
     padding-top: 10px;
-padding: 10px;
+    padding: 10px;
 }
-.guarnicion .fritas{
-margin-left: 50px;    
+
+.guarnicion .fritas {
+    margin-left: 50px;
+}
+
+.guarnicion p {
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    padding-top: 15px;
+    font-size: 10px;
+}
+
+.guarnicion p b {
+    left: 48%;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
 }
 
 footer {
@@ -386,11 +407,13 @@ footer {
         width: 100%;
         display: block;
     }
-    ::-webkit-scrollbar{
+
+    ::-webkit-scrollbar {
         display: none;
     }
-    .gridContent{
-       padding-bottom: 40px;
+
+    .gridContent {
+        padding-bottom: 40px;
         width: 100%;
         display: grid;
         grid-template-areas: auto auto auto;
@@ -443,18 +466,21 @@ footer {
         min-height: 139px;
         max-height: 139px;
         list-style-position: inside;
-    padding-left: 15px;
+        padding-left: 15px;
     }
-    .imgcard ul li{
+
+    .imgcard ul li {
         position: relative;
     }
-    .imgcard ul li::before{
+
+    .imgcard ul li::before {
         position: absolute;
         padding: 0;
         left: -10px;
-     
+
     }
-    .imgcard ul li{
+
+    .imgcard ul li {
         width: 100%;
         text-align: left;
     }
@@ -468,71 +494,139 @@ footer {
     .guarnicion {
         position: relative;
         height: 310px;
-        background-color: #000;
         color: #fff;
         text-align: center;
         margin: 0;
         top: -90px;
         width: 100%;
-        z-index: -100; 
+        z-index: -100;
         display: flex;
         justify-content: center;
+        border-bottom: none;
         align-items: center;
     }
-    .guarnicion dl{
-       width:50%;
-       align-items: center;
-       margin: 0 auto;
-       margin-top: 10px;
-       letter-spacing: 2px;
+
+    .guarnicion dl {
+        width: 50%;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        letter-spacing: 2px;
     }
-    .guarnicion dt{
+
+    .guarnicion dt {
         padding-top: 0;
         padding: 0;
     }
-    .guarnicion dd{
+
+    .guarnicion dd {
         font-size: 12px;
     }
+
     .guarnicion .fritas {
         margin-left: 0;
     }
-    .guarnicion .fritas dt{
+
+    .guarnicion .fritas dt {
         margin-top: 20px;
         height: 30px;
     }
-    .guarnicion .rusticas{
+
+    .guarnicion .rusticas {
         text-align: center;
         margin: 0 auto;
         width: 90%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .guarnicion .boniatos{
+
+    .guarnicion .boniatos {
         padding-top: 10px;
         padding-bottom: 13px;
     }
 
-    .guarnicion p{
-        text-align: center;
-        width: 350px;
+
+    .armala {
+        border-top: 5px solid #3d3d3d;
         margin: 0 auto;
-        position: absolute;
-        bottom: 0;
-        padding-top: 15px;
-        font-size: 10px;
+        margin-top: -90px;
+        padding: 5px;
+        height: 300px;
+        background: red;
+        color: #fff;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px 100px;
+        gap: 5px;
     }
-    .guarnicion p b{
-        left: 48%;
-        position: absolute;
-        top: 0;
+
+    .armala dl:nth-child(1) {
+        background: transparent;
+        width: fit-content;
+
+    }
+
+    .armala dl:nth-child(1) dt {
+        font-size: 25px;
+        font-family: 'Arvo', serif;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .armala dl {
         margin: 0 auto;
+        background: #3d3d3d;
+        width: 130px;
+        height: 100%;
+    }
+
+    .armala dl dt {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .armala dl dd {
+        text-align: center;
+        width: auto;
+        font-size: 13px;
+
+    }
+
+    .armala dl:nth-child(4) {
+        grid-area: 2 / 2 / auto / auto;
+    }
+
+    .armala dl:nth-child(5) {
+        grid-area: 2 / 3 / auto / auto;
+    }
+
+
+    .armala p {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px;
+        width: 90%;
+        font-size: 12px;
+        background: #3d3d3d;
+        left: 20px;
+        padding: 10px;
+    }
+    .armala p b{
+        font-family: 'Arvo', serif;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding-right: 10px;
+        font-size: 20px;
     }
 
 }
+
 @media screen and (max-width: 310px) {
 
 
-    .guarnicion .rusticas{
+    .guarnicion .rusticas {
         width: 100%;
     }
 }
