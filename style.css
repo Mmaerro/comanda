@@ -548,7 +548,7 @@ footer {
         padding-bottom: 13px;
     }
     .guarnicion p{
-        width: 350px;
+min-width: 350px;
 
     }
 
