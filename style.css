@@ -608,12 +608,11 @@ min-width: 350px;
     }
     .armala dl:nth-child(1) dd:first-of-type{
         padding: 0;
-        padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 11px;
+        font-size: 10px;
     }
     .armala dl:nth-child(1) dd:last-of-type{
-        font-size: 12px;
+        font-size: 11px;
     }
 
 
