@@ -549,7 +549,7 @@ footer {
     }
     .guarnicion p{
 min-width: 350px;
-
+        bottom: 10px;
     }
 
     .armala {
