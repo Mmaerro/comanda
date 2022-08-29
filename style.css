@@ -309,21 +309,6 @@ main {
 
 }
 
-.guarnicion .rusticas {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.guarnicion dt {
-    font-size: 15px;
-    padding-top: 10px;
-    padding: 10px;
-}
-
-.guarnicion .fritas {
-    margin-left: 50px;
-}
-
 .guarnicion p {
     text-align: center;
     width: 22%;
@@ -493,8 +478,10 @@ footer {
     }
 
     .guarnicion {
+        padding-top:30px;
+        padding-bottom:50px;
         position: relative;
-        height: 220px;
+        height: 200px;
         color: #fff;
         text-align: center;
         margin: 0;
@@ -502,23 +489,23 @@ footer {
         width: 100%;
         z-index: -100;
         display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto;
         justify-content: center;
-        border-bottom: none;
+        border-bottom: transparent;
         align-items: center;
+        overflow-x: hidden;
     }
 
     .guarnicion dl {
-        width: 100%;
+        width:110px;
         align-items: center;
         margin: 0 auto;
-        margin-top: 0px;
         letter-spacing: 2px;
     }
 
     .guarnicion dt {
-        padding-top: 0;
-        padding: 0;
+        margin: 0 auto;
+        padding-bottom: 10px;
         font-size: 12px;
     }
 
@@ -529,39 +516,16 @@ footer {
         margin: 0px;
     }
 
-    .guarnicion .fritas {
-      margin: 0 auto;
-      margin-bottom: 0px;
-    }
-
-    .guarnicion .fritas dt {
-        margin-top: 10px;
-        height: 30px;
-        margin-bottom: 0px;
-    }
-
-    .guarnicion .rusticas {
-        text-align: center;
-        margin: 0 auto;
-        width: 90%;
-        padding-top: 10px;
-        padding-bottom: 0px;
-    }
-
-    .guarnicion .boniatos {
-        padding-top: 5px;
-        padding-bottom: 13px;
-    }
     .guarnicion p{
 min-width: 350px;
-        bottom: 10px;
+left:25px;
+        bottom: 15px;
     }
 
     .armala {
         position: relative;
-        border-top: 5px solid #3d3d3d;
         margin: 0 auto;
-        margin-top: -80px;
+        margin-top: -60px;
         padding: 5px;
         height: 300px;
         background: red;
