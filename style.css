@@ -494,45 +494,50 @@ footer {
 
     .guarnicion {
         position: relative;
-        height: 285px;
+        height: 220px;
         color: #fff;
         text-align: center;
         margin: 0;
-        top: -80px;
+        top: -60px;
         width: 100%;
         z-index: -100;
-        display: flex;
+        display: grid;
+    grid-template-columns: auto auto;
         justify-content: center;
         border-bottom: none;
         align-items: center;
     }
 
     .guarnicion dl {
-        width: 40%;
+        width: 100%;
         align-items: center;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 0px;
         letter-spacing: 2px;
     }
 
     .guarnicion dt {
         padding-top: 0;
         padding: 0;
+        font-size: 12px;
     }
 
     .guarnicion dd {
         font-size: 10px;
         padding: 2px;
         letter-spacing: 1px;
+        margin: 0px;
     }
 
     .guarnicion .fritas {
       margin: 0 auto;
+      margin-bottom: 0px;
     }
 
     .guarnicion .fritas dt {
-        margin-top: 20px;
+        margin-top: 10px;
         height: 30px;
+        margin-bottom: 0px;
     }
 
     .guarnicion .rusticas {
@@ -540,11 +545,11 @@ footer {
         margin: 0 auto;
         width: 90%;
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
 
     .guarnicion .boniatos {
-        padding-top: 10px;
+        padding-top: 5px;
         padding-bottom: 13px;
     }
     .guarnicion p{
@@ -656,6 +661,11 @@ min-width: 350px;
         background-color: #f2f2f2;
         color: #000;
         font-weight: 1000;
+    }
+    .vegeta{
+        background: #3d3d3d;
+        color: #fff;
+        height: 200px;
     }
 
 }
