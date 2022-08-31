@@ -116,7 +116,7 @@ header svg {
 
 
 body {
-    background: #f2f2f2;
+    background: #858585;
 
 
 }
@@ -148,12 +148,11 @@ main {
     border-radius: 80%;
     border: 1px solid #4b4b4bc7;
     padding: 10px 0;
-    box-shadow: 0 0 10px rgb(75, 75, 75);
+    box-shadow: 0 0 10px rgb(207, 207, 207);
 }
 
 .contlogo span {
     background-color: rgb(230, 2, 2);
-    border: 1px solid #cf4217;
     width: 100%;
     height: 5px;
 }
@@ -180,7 +179,7 @@ main {
     letter-spacing: 2px;
     width: 100%;
     font-size: 40px;
-    color: #000;
+    color: #fff;
     z-index: 1000;
 }
 
@@ -387,7 +386,7 @@ footer {
     .encabezado img {
         padding: 30px 0;
     }
-
+    /* MENU */
     .menu {
         width: 100%;
         display: block;
@@ -476,7 +475,7 @@ footer {
         font-size: 7px;
         padding: 5px;
     }
-
+    /* GUARNICIONES */
     .guarnicion {
         padding-top:30px;
         padding-bottom:50px;
@@ -489,7 +488,7 @@ footer {
         width: 100%;
         z-index: -100;
         display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
         justify-content: center;
         border-bottom: transparent;
         align-items: center;
@@ -517,11 +516,11 @@ footer {
     }
 
     .guarnicion p{
-min-width: 350px;
-left:25px;
+        width: 90%;
+        left: 5%;
         bottom: 15px;
     }
-
+    /* ARMALA COMO QUIERAS */
     .armala {
         position: relative;
         margin: 0 auto;
@@ -626,18 +625,28 @@ left:25px;
         color: #000;
         font-weight: 1000;
     }
+
+
+    /* VEGETARIANAS */
     .vegeta{
         background: #3d3d3d;
         color: #fff;
         height: 200px;
+        font-size: 20px;
+        padding: 10px;
+        font-family: 'Arvo', serif;
     }
+
 
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 418px) {
 
-
-    .guarnicion .rusticas {
-        width: 100%;
+    .guarnicion{    
+    grid-template-columns: auto auto;
+        height: max-content;
+        row-gap: 10px;
+        justify-content: space-evenly;
     }
+
 }
