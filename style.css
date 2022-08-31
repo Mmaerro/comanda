@@ -631,25 +631,84 @@ footer {
     .vegeta{
         background: #3d3d3d;
         color: #fff;
-        height: 200px;
+        display: grid;
+        grid-template-columns: auto auto;
        
     }
      .vegeta h3{
-        font-size: 20px;
+        width: fit-content;
+        font-size: 24px;
         padding: 10px;
         font-family: 'Arvo', serif;
         position: relative;
         z-index: 1;
+        letter-spacing: 2px;
+        overflow-x: hidden;
      }
      .vegeta h3::before{
         content: " ";
         position: absolute;
         background-color: rgb(243, 0, 0);
-        width: 100px;
-        height: 3px;
+        width: 95%;
+        height: 4px;
        bottom: 9px;
        left: 0px;
        z-index: -1;
+     }
+     .veggie-option{
+        grid-area: 2 / 1 / auto / auto;
+     }
+     .veggie-option{
+        width: 100%;
+        padding-left: 10px;
+     }
+     .veggie-option dt{
+        font-family: 'Arvo', serif;
+        padding-top: 10px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        width: 100%;
+     }
+     .veggie-option dd{
+        width: 90%;
+        letter-spacing: 0.5px;
+        padding-top: 2px;
+        font-size: 10px;
+        font-weight: 10;
+     }
+     .guarni-veggie{
+        margin-right: 5px;
+        grid-area: 2 / 2 / auto / auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        background-color: #ff0000;     
+        height: fit-content;   
+
+     }
+     .guarni-veggie dl{
+        background-color: #3d3d3d;
+        height: 100px;
+        width: 110px;
+        padding: 0px 5px;
+        margin: 5px;
+     }
+     .guarni-veggie dt{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 13px;
+     }
+     .guarni-veggie dl:nth-child(3) dt{
+        padding-top: 5px;
+     }
+
+     .guarni-veggie dd{
+        font-size: 11px;
+        padding: 2px;
      }
 
 
