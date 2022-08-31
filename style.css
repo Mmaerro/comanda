@@ -635,7 +635,7 @@ footer {
         grid-template-columns: auto auto;
        
     }
-     .vegeta h3{
+     .vegeta .vege{
         width: fit-content;
         font-size: 24px;
         padding: 10px;
@@ -645,7 +645,7 @@ footer {
         letter-spacing: 2px;
         overflow-x: hidden;
      }
-     .vegeta h3::before{
+     .vegeta .vege::before{
         content: " ";
         position: absolute;
         background-color: rgb(243, 0, 0);
@@ -711,7 +711,55 @@ footer {
         padding: 2px;
      }
 
+     .beyond{
+        grid-area: 3 / 1 / auto  / 3 ;
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+     }
+     .beyond h3{
+        font-size: 25px;
+        padding: 10px;
+        color: rgb(255, 0, 0);
+        letter-spacing: 1px;
+        font-family: 'Arvo', serif;
+        font-weight: bolder;
+     }
+     .beyond h3::after{
+        color: #fff;
+        content: "NUEVA!";
+        background-color: #3d3d3d;
+        margin-left: 10px;
+        padding: 5px 5px 5px 20px;
+        width: 200px;
+clip-path: polygon(21% 0, 100% 0, 100% 100%, 20% 100%, 0% 50%);
 
+     }
+     .beyond p{
+        text-align: center;
+        color: #000;
+        width: 100%;
+        font-size:11px;
+     }
+     .beyond ul{
+        display: flex;
+        width: 100%;
+        font-size: 11px;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-top: 5px;
+     }
+     .beyond ul li{
+        padding: 2.5px;
+     }
+     .beyond ul li:first-child{
+        background-color: red;
+     }
+     .beyond ul li:last-child{
+        background-color: #3d3d3d;
+     }
 }
 
 @media screen and (max-width: 418px) {
@@ -721,6 +769,7 @@ footer {
         height: max-content;
         row-gap: 10px;
         justify-content: space-evenly;
+
     }
 
 }
