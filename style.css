@@ -762,7 +762,8 @@ footer {
     }
 
     .guarni-veggie dl:nth-child(3) dt {
-        padding-top: 5px;
+        padding-top: 1px;
+        min-width: 90px;
     }
 
     .guarni-veggie dd {
