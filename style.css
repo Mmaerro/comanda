@@ -88,8 +88,42 @@ header svg {
     margin: 85px 0 0 160px;
 }
 
+/* MENU SELECT NAV */
 
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.drop-content {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    padding: 5px;
+}
+
+.drop-content a {
+    text-shadow: none;
+    font-size: 10px;
+    float: none;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.drop-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
 
 /*! WAHTSAP  */
 .wpp {
@@ -386,6 +420,7 @@ footer {
     .encabezado img {
         padding: 30px 0;
     }
+
     /* MENU */
     .menu {
         width: 100%;
@@ -475,10 +510,11 @@ footer {
         font-size: 7px;
         padding: 5px;
     }
+
     /* GUARNICIONES */
     .guarnicion {
-        padding-top:45px;
-        padding-bottom:50px;
+        padding-top: 45px;
+        padding-bottom: 50px;
         position: relative;
         height: 200px;
         color: #fff;
@@ -488,7 +524,7 @@ footer {
         width: 100%;
         z-index: -100;
         display: grid;
-    grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto;
         justify-content: center;
         border-bottom: transparent;
         align-items: center;
@@ -496,7 +532,7 @@ footer {
     }
 
     .guarnicion dl {
-        width:120px;
+        width: 120px;
         align-items: center;
         margin: 0 auto;
         letter-spacing: 2px;
@@ -515,11 +551,12 @@ footer {
         margin: 0px;
     }
 
-    .guarnicion p{
+    .guarnicion p {
         width: 90%;
         left: 5%;
         bottom: 12px;
     }
+
     /* ARMALA COMO QUIERAS */
     .armala {
         position: relative;
@@ -549,11 +586,13 @@ footer {
         font-size: 13px;
         text-align: center;
     }
+
     .armala dl:nth-child(4) dt {
         padding-top: 5px;
         padding-bottom: 5px;
         width: 90%;
     }
+
     .armala dl dd {
         text-align: center;
         width: auto;
@@ -562,6 +601,7 @@ footer {
         letter-spacing: 1px;
 
     }
+
     .armala dl:nth-child(1) {
         background: transparent;
         width: fit-content;
@@ -574,12 +614,14 @@ footer {
         font-weight: 800;
         letter-spacing: 1px;
     }
-    .armala dl:nth-child(1) dd:first-of-type{
+
+    .armala dl:nth-child(1) dd:first-of-type {
         padding: 0;
         padding-bottom: 10px;
         font-size: 10px;
     }
-    .armala dl:nth-child(1) dd:last-of-type{
+
+    .armala dl:nth-child(1) dd:last-of-type {
         font-size: 11px;
     }
 
@@ -606,22 +648,24 @@ footer {
         padding: 10px;
         box-shadow: 0 0 5px #000;
     }
-    .armala p:first-of-type b{
+
+    .armala p:first-of-type b {
         font-family: 'Arvo', serif;
         font-weight: 800;
         letter-spacing: 1px;
         padding-right: 10px;
         font-size: 20px;
     }
-    .armala p:last-of-type{
+
+    .armala p:last-of-type {
         font-family: 'Arvo', serif;
         position: absolute;
         font-size: 11px;
         padding: 5px;
         top: -10px;
         left: 0;
-     border-bottom-right-radius: 30px;
-     border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
         background-color: #f2f2f2;
         color: #000;
         font-weight: 1000;
@@ -630,14 +674,15 @@ footer {
 
 
     /* VEGETARIANAS */
-    .vegeta{
+    .vegeta {
         background: #3d3d3d;
         color: #fff;
         display: grid;
         grid-template-columns: auto auto;
-       
+
     }
-     .vegeta .vege{
+
+    .vegeta .vege {
         width: fit-content;
         font-size: 24px;
         padding: 10px;
@@ -646,42 +691,48 @@ footer {
         z-index: 1;
         letter-spacing: 2px;
         overflow-x: hidden;
-     }
-     .vegeta .vege::before{
+    }
+
+    .vegeta .vege::before {
         content: " ";
         position: absolute;
         background-color: rgb(243, 0, 0);
         width: 95%;
         height: 4px;
-       bottom: 9px;
-       left: 0px;
-       z-index: -1;
-     }
-     .veggie-option{
+        bottom: 9px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    .veggie-option {
         grid-area: 2 / 1 / auto / auto;
-     }
-     .veggie-option{
+    }
+
+    .veggie-option {
         min-height: 230px;
         width: 100%;
         padding-left: 10px;
         padding-bottom: 20px;
-     }
-     .veggie-option dt{
+    }
+
+    .veggie-option dt {
         font-family: 'Arvo', serif;
         padding-top: 10px;
         font-size: 13px;
         font-weight: 700;
         letter-spacing: 1px;
         width: 100%;
-     }
-     .veggie-option dd{
+    }
+
+    .veggie-option dd {
         width: 90%;
         letter-spacing: 0.5px;
         padding-top: 2px;
         font-size: 10px;
         font-weight: 10;
-     }
-     .guarni-veggie{
+    }
+
+    .guarni-veggie {
         margin-right: 5px;
         grid-area: 2 / 2 / auto / auto;
         display: grid;
@@ -690,80 +741,87 @@ footer {
         justify-content: center;
         text-align: center;
         width: auto;
-        background-color: #ff0000;     
-        height: fit-content;   
+        background-color: #ff0000;
+        height: fit-content;
         position: relative;
-     }
-     .guarni-veggie dl{
+    }
+
+    .guarni-veggie dl {
         background-color: #3d3d3d;
         height: 80px;
         width: 100px;
         padding: 0px 5px;
         margin: 5px;
         box-shadow: 0 0 3px #000;
-     }
-     .guarni-veggie dt{
+    }
+
+    .guarni-veggie dt {
         padding-top: 10px;
         padding-bottom: 5px;
         font-size: 13px;
-     }
-     .guarni-veggie dl:nth-child(3) dt{
-        padding-top: 5px;
-     }
+    }
 
-     .guarni-veggie dd{
+    .guarni-veggie dl:nth-child(3) dt {
+        padding-top: 5px;
+    }
+
+    .guarni-veggie dd {
         font-size: 11px;
         padding: 2px;
-     }
+    }
 
-     .guarni-veggie p{
+    .guarni-veggie p {
         font-family: 'Arvo', serif;
         position: absolute;
         font-size: 11px;
         padding: 5px;
         right: -5px;
         bottom: -27px;
-     border-bottom-left-radius: 30px;
-     border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
         background-color: #f2f2f2;
         color: #000;
         font-weight: 1000;
         box-shadow: 0 0 5px #000;
 
-     }
+    }
 
-     .beyond{
-        grid-area: 3 / 1 / auto  / 3 ;
+    .beyond {
+        grid-area: 3 / 1 / auto / 3;
         width: 100%;
         height: 100px;
         background-color: #fff;
         box-shadow: 0 0 10px #000;
-     }
-     .beyond h3{
+    }
+
+    .beyond h3 {
         font-size: 25px;
         padding: 10px;
         color: rgb(255, 0, 0);
         letter-spacing: 1px;
         font-family: 'Arvo', serif;
         font-weight: bolder;
-     }
-     .beyond h3::after{
+    }
+
+    .beyond h3::after {
         color: #fff;
         content: "NUEVA!";
         background-color: #3d3d3d;
         margin-left: 10px;
         padding: 5px 5px 5px 20px;
         width: 200px;
-clip-path: polygon(21% 0, 100% 0, 100% 100%, 20% 100%, 0% 50%);
+        clip-path: polygon(21% 0, 100% 0, 100% 100%, 20% 100%, 0% 50%);
 
-     }
-     .beyond p{
+    }
+
+    .beyond p {
         text-align: center;
         color: #000;
         width: 100%;
-        font-size:10px;
-     }
-     .beyond ul{
+        font-size: 10px;
+    }
+
+    .beyond ul {
         display: flex;
         width: 100%;
         font-size: 10px;
@@ -773,22 +831,25 @@ clip-path: polygon(21% 0, 100% 0, 100% 100%, 20% 100%, 0% 50%);
         gap: 5px;
         margin-top: 5px;
         list-style: none;
-     }
-     .beyond ul li{
+    }
+
+    .beyond ul li {
         padding: 2.5px;
-     }
-     .beyond ul li:first-child{
+    }
+
+    .beyond ul li:first-child {
         background-color: red;
-     }
-     .beyond ul li:last-child{
+    }
+
+    .beyond ul li:last-child {
         background-color: #3d3d3d;
-     }
+    }
 }
 
 @media screen and (max-width: 418px) {
 
-    .guarnicion{    
-    grid-template-columns: auto auto;
+    .guarnicion {
+        grid-template-columns: auto auto;
         height: max-content;
         row-gap: 10px;
         justify-content: space-evenly;
