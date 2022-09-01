@@ -431,7 +431,7 @@ footer {
     .cards {
         margin: 0 auto;
         width: auto;
-        height: 320px;
+        height: 323px;
         width: 150px;
     }
 
@@ -447,8 +447,8 @@ footer {
 
     .imgcard ul {
         font-size: 13px;
-        min-height: 139px;
-        max-height: 139px;
+        min-height: 141px;
+        max-height: 141px;
         list-style-position: inside;
         padding-left: 12px;
     }
@@ -759,7 +759,7 @@ clip-path: polygon(21% 0, 100% 0, 100% 100%, 20% 100%, 0% 50%);
      .beyond ul{
         display: flex;
         width: 100%;
-        font-size: 11px;
+        font-size: 10px;
         color: #fff;
         justify-content: center;
         align-items: center;
