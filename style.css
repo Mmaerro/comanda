@@ -661,7 +661,7 @@ footer {
      .veggie-option{
         width: 100%;
         padding-left: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
      }
      .veggie-option dt{
         font-family: 'Arvo', serif;
@@ -689,7 +689,7 @@ footer {
         width: auto;
         background-color: #ff0000;     
         height: fit-content;   
-
+        position: relative;
      }
      .guarni-veggie dl{
         background-color: #3d3d3d;
@@ -710,6 +710,20 @@ footer {
      .guarni-veggie dd{
         font-size: 11px;
         padding: 2px;
+     }
+
+     .guarni-veggie p{
+        font-family: 'Arvo', serif;
+        position: absolute;
+        font-size: 11px;
+        padding: 5px;
+        right: -5px;
+        bottom: -27px;
+     border-bottom-left-radius: 30px;
+     border-top-left-radius: 30px;
+        background-color: #f2f2f2;
+        color: #000;
+        font-weight: 1000;
      }
 
      .beyond{
