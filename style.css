@@ -506,7 +506,7 @@ footer {
     }
 
     .cards a {
-        top: 5px;
+        top: 0;
         font-size: 7px;
         padding: 5px;
     }
