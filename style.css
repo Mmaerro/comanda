@@ -334,29 +334,37 @@ main {
     z-index: -1;
     border-top: 1px solid #ff0000;
     border-bottom: 1px solid #ff0000;
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 150px;
     justify-content: center;
     align-items: center;
     color: #fff;
-    text-align: center;
-
 }
 
+.guarnicion dl{
+    text-align: center;
+}
+.guarnicion dl dt{
+    padding-bottom: 10px;
+}
+.guarnicion dl dd{
+    padding-top: 5px;
+}
+.guarnicion dl:nth-child(3) dt{
+    width: 80%;
+    margin: 0 auto;
+}
 .guarnicion p {
+    grid-area: 3 / 1 / auto / 3;
     text-align: center;
-    width: 22%;
     margin: 0 auto;
-    position: absolute;
-    bottom: 12px;
-    padding-top: 15px;
     font-size: 10px;
+    position: relative;
 }
-
-.guarnicion p b {
-    left: 48%;
+.guarnicion p b{
     position: absolute;
-    top: 0;
-    margin: 0 auto;
+    top: -15px;
+    left: 45%;
 }
 
 footer {
@@ -524,7 +532,7 @@ footer {
         width: 100%;
         z-index: -100;
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
         justify-content: center;
         border-bottom: transparent;
         align-items: center;
@@ -551,12 +559,24 @@ footer {
         margin: 0px;
     }
 
-    .guarnicion p {
+   
+    .guarnicion dl:nth-child(3) dt{
         width: 90%;
-        left: 5%;
-        bottom: 12px;
+        margin: 0 auto;
     }
-
+    .guarnicion p {
+        width: 80%;
+        padding-top: 20px;
+        grid-area: 3 / 1 / auto / 5;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .guarnicion p b{
+        position: absolute;
+        top: 2px;
+        left: 45%;
+    }
+    
     /* ARMALA COMO QUIERAS */
     .armala {
         position: relative;
@@ -577,8 +597,7 @@ footer {
         margin: 0 auto;
         background: #3d3d3d;
         width: 128px;
-        height: 100%;
-    }
+        height: 100%; }
 
     .armala dl dt {
         padding-top: 10px;
@@ -847,16 +866,32 @@ footer {
     }
 }
 
-@media screen and (max-width: 418px) {
+@media screen and (max-width: 444px) {
 
     .guarnicion {
-        grid-template-columns: auto auto;
-        height: max-content;
-        row-gap: 10px;
-        justify-content: space-evenly;
-
+        grid-template-columns: 150px 150px;
+        margin-top: -10px;
+        height: fit-content;
+        margin-bottom: -100px;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+    .guarnicion dl{
+        min-width: 100px;
+    }
+    .guarnicion dl:nth-child(3) dt{
+        width: 90%;
+    }
+    .guarnicion dl:nth-child(3) dd:first-of-type{
+        padding-top: 0px;
     }
 
+    .guarnicion p {
+        margin-top: -10px;
+        width: 100%;
+        grid-area: 3/ 1 / auto / 3;
+    }
 }
 
 @media screen and (max-width: 380px) {
