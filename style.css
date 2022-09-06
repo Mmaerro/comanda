@@ -33,11 +33,10 @@ nav a {
     text-align: center;
     font-size: 15px;
     letter-spacing: 2px;
-    padding: 5px;
+    padding: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 5px 2px 12px rgb(0, 0, 0);
     text-decoration: none;
-
 }
 
 header {
@@ -70,7 +69,7 @@ header svg {
 
 .encabezado img {
     margin-top: 100px;
-    width: 50%;
+    width: 40%;
     padding: 50px 0;
     background-color: #000000c7;
     border: 1px solid #ffffff;
@@ -266,6 +265,7 @@ main {
     text-align: center;
     box-shadow: 0 0 8px #000000;
     border: 1px solid rgb(143, 143, 143);
+    z-index: 100;
 }
 
 .imgcard img {
@@ -327,10 +327,10 @@ main {
 
 /* GUARNICION */
 .guarnicion {
-    height: 310px;
+    height: 320px;
     background-color: #3d3d3d;
     position: absolute;
-    top: 140px;
+    top: 120px;
     width: 100%;
     z-index: -1;
     border-top: 1px solid #ff0000;
@@ -340,6 +340,7 @@ main {
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding-bottom: 20px;
 }
 
 .guarnicion dl{
@@ -375,17 +376,16 @@ main {
     position: relative;
     margin: 0 auto;
     padding: 5px;
-    margin-top: -30px;
-    padding-top: 60px;
-    height: 320px;
-    background: red;
+    margin-top: -40px;
+    padding-top: 75px;
+    height: 300px;
+    background: rgba(228, 0, 0, 0.918);
     color: #fff;
     display: grid;
     grid-template-columns: auto auto auto ;
     grid-template-rows: 100px 100px;
     align-items: center;
     gap: 5px;
-    z-index: -10;
     box-shadow: 0 0 10px #000;
 
 }
@@ -430,7 +430,7 @@ padding-left: 50px;
 
 .armala dl:nth-child(1) dt {
     font-size: 35px;
-    width: 60%;
+    width: 80%;
     font-family: 'Arvo', serif;
     font-weight: 800;
     letter-spacing: 1px;
@@ -439,15 +439,28 @@ padding-left: 50px;
 
 .armala dl:nth-child(1) dd:first-of-type {
     padding: 0;
-    margin-left: -30px;
+    margin-left: -50px;
     padding-bottom: 13px;
     font-size: 10px;
 }
 
-.armala dl:nth-child(1) dd:last-of-type {
+.armala dl:nth-child(1) dd:nth-child(3) {
     font-size: 13px;
     margin-left: -30px;
-
+}
+.armala dl:nth-child(1) dd:nth-child(4){
+    font-size: 12px;
+    top: 10px;
+    left: -15px;
+    padding: 8px 5px;
+    background: #464646;
+    text-decoration: none;
+    border: 1px solid #000;
+    letter-spacing: 2px;
+}
+.armala dl:nth-child(1) dd:nth-child(4) a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 .armala dl:nth-child(2),
 .armala dl:nth-child(3),
@@ -481,10 +494,10 @@ height: 150px;
     justify-content: center;
     align-items: center;
     bottom: 10px;
-    width: 75%;
+    width: 65%;
     font-size: 12px;
     background: #3d3d3d;
-    left: 15%;
+    right: 5%;
     padding: 10px;
     box-shadow: 0 0 5px #000;
 }
@@ -500,16 +513,16 @@ height: 150px;
 .armala p:last-of-type {
     font-family: 'Arvo', serif;
     position: absolute;
-    font-size: 11px;
-    padding: 5px;
+    font-size: 13px;
+    padding: 5px 30px;
     top: -10px;
-    left: 0;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    background-color: #f2f2f2;
+    left: 50%;
+    margin-left: -95px;
+    border-radius: 0;
+    background: linear-gradient(to right, #cb306600, #ffffff, #ffffff, #ffffff, #ff005900);
     color: #000;
     font-weight: 1000;
-    box-shadow: 0 0 5px #000;
+    z-index: 100;
 }
 
 
@@ -564,6 +577,9 @@ footer {
         padding-right: 0px;
         justify-content: space-evenly;
         align-items: center;
+    }
+    nav a{
+        padding: 5px;
     }
 
     .encabezado {
@@ -732,7 +748,7 @@ footer {
         margin: 0 auto;
         margin-top: -60px;
         padding: 5px;
-        height: 300px;
+        height: 320px;
         background: red;
         color: #fff;
         display: grid;
@@ -774,6 +790,7 @@ footer {
         background: transparent;
         width: fit-content;
         padding: 0px;
+        position: relative;
     }
 
     .armala dl:nth-child(1) dt {
@@ -789,17 +806,29 @@ footer {
     .armala dl:nth-child(1) dd:first-of-type {
         padding: 0;
         padding-bottom: 10px;
-        font-size: 10px;
+        font-size: 11px;
         margin-left: 0px;
         
     }
 
-    .armala dl:nth-child(1) dd:last-of-type {
+    .armala dl:nth-child(1) dd:nth-child(3) {
         font-size: 11px;
         margin-left: 0px;
-
     }
 
+    .armala dl:nth-child(1) dd:nth-child(4) {
+        border: 1px double #fff;
+        font-size: 8px;
+        position: absolute;
+        top: 285px;
+        left: -6px;
+        padding: 5px;
+        width: 140px;
+        background: rgb(0, 0, 0);
+        color: #000;
+        box-shadow: 0 0 10px #fff;
+    }
+   
     .armala dl:nth-child(2),
     .armala dl:nth-child(3),
     .armala dl:nth-child(4),
@@ -824,13 +853,13 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        bottom: 10px;
+        bottom: 40px;
         width: 95%;
         font-size: 12px;
         background: #3d3d3d;
         left: 10px;
         padding: 10px;
-        box-shadow: 0 0 5px #000;
+        box-shadow: 0 0 2px #000;
     }
 
     .armala p:first-of-type b {
@@ -842,18 +871,16 @@ footer {
     }
 
     .armala p:last-of-type {
-        font-family: 'Arvo', serif;
-        position: absolute;
         font-size: 11px;
         padding: 5px;
+        background: #fff;
         top: -10px;
         left: 0;
+        margin-left: 0;
+        border-radius: 0;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
-        background-color: #f2f2f2;
-        color: #000;
-        font-weight: 1000;
-        box-shadow: 0 0 5px #000;
+        
     }
 
 
