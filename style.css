@@ -932,13 +932,17 @@ footer {
         border-bottom: none;
         font-family: 'Arvo', serif;
         padding: 10px 0 5px 5px;
-        margin-top: 10px;
         font-size: 13px;
         font-weight: 700;
         letter-spacing: 1px;
         width: 90%;
+        margin-top: 15px;
     }
 
+    .veggie-option dt:first-of-type{
+        margin-top: 0px;
+    }
+   
     .veggie-option dd {
         padding: 0 5px 15px 5px;
         border: 1px solid #fff;
@@ -964,7 +968,7 @@ footer {
     }
 
     .guarni-veggie {
-        margin-top: 60px;
+        margin-top: 50px;
         margin-right: 5px;
         grid-area: 2 / 2 / auto / auto;
         display: grid;
