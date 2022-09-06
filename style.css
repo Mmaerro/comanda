@@ -1083,6 +1083,30 @@ footer {
     .beyond ul li:last-child {
         background-color: #3d3d3d;
     }
+    
+    .guarni-veggie {
+        margin-top: -50px;
+            grid-template-columns: auto ;
+            position: initial;
+            box-shadow: 0 0 10px #000;
+            padding-bottom: 15px;
+        }
+        
+        .guarni-veggie dl {
+            height: 70px;
+            width: 90px;
+            padding: 0px 0px;
+        }
+        .guarni-veggie p {
+            padding: 5px;
+            left:0;
+            bottom:110px;
+            border-bottom-left-radius: 0px;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            width: max-content;
+        }
 }
 
 @media screen and (max-width: 444px) {
@@ -1153,29 +1177,6 @@ footer {
         font-size: 23px;
     }
     
-    .guarni-veggie {
-    margin-top: -50px;
-        grid-template-columns: auto ;
-        position: initial;
-        box-shadow: 0 0 10px #000;
-        padding-bottom: 15px;
-    }
-    
-    .guarni-veggie dl {
-        height: 70px;
-        width: 90px;
-        padding: 0px 0px;
-    }
-    .guarni-veggie p {
-        padding: 5px;
-        left:0;
-        bottom:110px;
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 0px;
-        border-bottom-right-radius: 30px;
-        border-top-right-radius: 30px;
-        width: max-content;
-    }
 }
 @media screen and (max-width: 340px) {
 
