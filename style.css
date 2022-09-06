@@ -756,6 +756,7 @@ footer {
         grid-template-rows: 100px 100px;
         align-items: center;
         gap: 5px;
+        box-shadow: none;
     }
 
     .armala dl {
@@ -1152,6 +1153,7 @@ footer {
         grid-template-columns: auto ;
         position: initial;
         box-shadow: 0 0 10px #000;
+        padding-bottom: 15px;
     }
     
     .guarni-veggie dl {
@@ -1161,13 +1163,13 @@ footer {
     }
     .guarni-veggie p {
         padding: 5px;
-        left: -5px;
-        right: inherit;
-        bottom:140px;
+        left:0;
+        bottom:110px;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
         border-bottom-right-radius: 30px;
         border-top-right-radius: 30px;
+        width: max-content;
     }
 }
 @media screen and (max-width: 340px) {
